@@ -25,6 +25,7 @@ Mais voici comment installer ce CTF manuellement :
 
 > cd fcsc2025-pwn-back-to-basic
 
+> docker compose up -d docker-compose-default.yml
 
 -----------
 
