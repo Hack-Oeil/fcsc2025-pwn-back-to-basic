@@ -1,0 +1,20 @@
+services:
+  ssh.cyrhades.fr:
+    container_name: ssh-517
+    build:
+      context: ./.docker/ssh
+      args:
+        LANGUAGE: ${LANGUAGE:-fr}
+    labels:
+      ho.ctf.cyrhades: "challenge"
+      ho.ctf.cyrhades.webssh: "1"
+    environment:
+      SSH_HOSTNAME: "ssh-517.cyrhades.fr"
+      SSH_PORT: 22
+      SSH_USERNAME: "cyrhades"
+      SSH_PASSWORD: "secret"
+    restart: unless-stopped 
+  back-to-basic.cyrhades.fr:
+    image: anssi/fcsc2025-pwn-back-to-basic:latest
+    ports:
+      - ${PORT_SSH}:4000
