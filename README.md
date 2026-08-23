@@ -4,9 +4,9 @@ Suite à quelques déboires avec le langage FORTH (cf. https://hackropole.fr/fr/
 
 
 Fichiers :
-- [back-to-basic](back-to-basic)
-- [my_basic-master.zip](my_basic-master.zip)
-- [back-to-basic.patch](back-to-basic.patch)
+- [back-to-basic](files/back-to-basic)
+- [my_basic-master.zip](files/my_basic-master.zip)
+- [back-to-basic.patch](files/back-to-basic.patch)
 
 
 Auteur : cde

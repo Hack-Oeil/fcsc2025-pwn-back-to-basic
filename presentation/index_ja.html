@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 
-<head lang="fr">
+<head>
     <meta charset="UTF-8">
     <!--Page Title-->
     <title>Hack-Oeil - Les CTFs de Cyrhades</title>
@@ -16,7 +16,7 @@
     <script src="./assets/js/highlight.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Vérifie si la fenêtre est dans une iframe
+            // ウィンドウが iframe 内にあるか確認
             if (window.self !== window.top) {
                 document.querySelectorAll('a').forEach((link) => {
                     link.addEventListener('click', (event) => {
@@ -31,11 +31,11 @@
                     });
                 });
             }
-            // Active la coloration syntaxique :
+            // シンタックスハイライトを有効化:
             if (window.hljs) {
                 hljs.highlightAll();
             } else {
-                console.error("Highlight.js non chargé !");
+                console.error("Highlight.js が読み込まれていません！");
             }
         });
     </script>
@@ -51,19 +51,15 @@
                 <article class="row clearfix">
                     <div class="col-1">
                         <div class="section-heading">
-                            <h3>Challenge #516</h3>
+                            <h3>チャレンジ #516</h3>
                             <h2 class="section-title">Back to BASIC</h2>
                             <p>
-                                Suite à quelques déboires avec le langage FORTH (cf.
-                                https://hackropole.fr/fr/challenges/pwn/fcsc2023-pwn-may-the-forth/), notre développeur
-                                a décidé d’un retour aux sources en utilisant un interpréteur BASIC. Il nous assure
-                                qu’aucune faille de sécurité n’est exploitable, grâce aux paramètres de compilation ;
-                                cependant, un hacker anonyme nous a transmis ce message énigmatique :
-                                <code>A=(A+0</code>.
-                                Pouvez-vous prouver que notre développeur a tort en lisant le fichier
-                                <code>flag.txt</code> ?
+                                FORTH言語でのいくつかの挫折を経て（参照:
+                                https://hackropole.fr/fr/challenges/pwn/fcsc2023-pwn-may-the-forth/ ）、開発者はBASICインタープリタを使用して原点回帰することを決めました。彼はコンパイルオプションのおかげで悪用可能なセキュリティ脆弱性は一切存在しないと断言しています。しかし、匿名のハッカーから不可解なメッセージが届きました:
+                                <code>A=(A+0</code>。
+                                <code>flag.txt</code> ファイルを読み取り、開発者の誤りを証明できますか？
                             </p>
-                            <h4>Fichiers à étudier</h4>
+                            <h4>調査対象ファイル</h4>
                             <p>
                                 - ../files/back-to-basic<br />
                                 - ../files/my_basic-master.zip<br />
@@ -79,25 +75,14 @@
                             <h3>FCSC 2025</h3>
                             <h2 class="section-title">Hackropole</h2>
                             <p class="section-subtitle">
-                                Lien officiel :
+                                公式リンク:
                                 <a target="_blank"
                                     href="https://hackropole.fr/fr/challenges/pwn/fcsc2025-pwn-back-to-basic/">FCSC
                                     2025 -
                                     Back to BASIC
                                 </a>
                                 <br />
-                                Auteur: cde
-                        </div>
-                    </div>
-                </article>
-
-                <article class="row clearfix">
-                    <div class="col-1">
-                        <div class="section-heading">
-                            <h3>Apprentissage</h3>
-                            <h2 class="section-title">Documentations et Vidéos</h2>
-                            <p class="section-subtitle">
-                                Aucune documentation pour le moment
+                                作成者: cde
                             </p>
                         </div>
                     </div>
@@ -106,12 +91,24 @@
                 <article class="row clearfix">
                     <div class="col-1">
                         <div class="section-heading">
-                            <h3>Aide</h3>
-                            <h2 class="section-title">Conseils et indices</h2>
+                            <h3>学習</h3>
+                            <h2 class="section-title">ドキュメントおよび動画</h2>
+                            <p class="section-subtitle">
+                                現在ドキュメントはありません
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="row clearfix">
+                    <div class="col-1">
+                        <div class="section-heading">
+                            <h3>ヘルプ</h3>
+                            <h2 class="section-title">ヒントとアドバイス</h2>
                             <p class="section-subtitle">
                                 <a target="_blank"
-                                    href="https://discord.com/channels/1175764392307077120/1175764601716092948">Fil sur
-                                    le Discord</a>
+                                    href="https://discord.com/channels/1175764392307077120/1175764601716092948">Discord
+                                    スレッド</a>
                             </p>
                         </div>
                     </div>
@@ -122,7 +119,7 @@
         <!--End Main Content Area-->
 
         <a id="scrollUp" href="#wrapper" style="position: fixed; z-index: 1000;"
-            aria-label="Remonter en haut de la page" title="Remonter en tête de site"></a>
+            aria-label="ページトップへ戻る" title="トップへ戻る"></a>
     </div>
 </body>
 

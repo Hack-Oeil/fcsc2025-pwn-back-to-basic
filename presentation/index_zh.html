@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 
-<head lang="fr">
+<head>
     <meta charset="UTF-8">
     <!--Page Title-->
     <title>Hack-Oeil - Les CTFs de Cyrhades</title>
@@ -16,7 +16,7 @@
     <script src="./assets/js/highlight.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Vérifie si la fenêtre est dans une iframe
+            // 检查窗口是否在 iframe 中
             if (window.self !== window.top) {
                 document.querySelectorAll('a').forEach((link) => {
                     link.addEventListener('click', (event) => {
@@ -31,11 +31,11 @@
                     });
                 });
             }
-            // Active la coloration syntaxique :
+            // 启用语法高亮：
             if (window.hljs) {
                 hljs.highlightAll();
             } else {
-                console.error("Highlight.js non chargé !");
+                console.error("Highlight.js 未加载！");
             }
         });
     </script>
@@ -51,19 +51,15 @@
                 <article class="row clearfix">
                     <div class="col-1">
                         <div class="section-heading">
-                            <h3>Challenge #516</h3>
+                            <h3>挑战 #516</h3>
                             <h2 class="section-title">Back to BASIC</h2>
                             <p>
-                                Suite à quelques déboires avec le langage FORTH (cf.
-                                https://hackropole.fr/fr/challenges/pwn/fcsc2023-pwn-may-the-forth/), notre développeur
-                                a décidé d’un retour aux sources en utilisant un interpréteur BASIC. Il nous assure
-                                qu’aucune faille de sécurité n’est exploitable, grâce aux paramètres de compilation ;
-                                cependant, un hacker anonyme nous a transmis ce message énigmatique :
-                                <code>A=(A+0</code>.
-                                Pouvez-vous prouver que notre développeur a tort en lisant le fichier
-                                <code>flag.txt</code> ?
+                                在经历了一些 FORTH 语言的挫折后（参见
+                                https://hackropole.fr/fr/challenges/pwn/fcsc2023-pwn-may-the-forth/），我们的开发人员决定返璞归真，使用 BASIC 解释器。他向我们保证，由于编译参数的设置，没有任何可利用的安全漏洞；然而，一位匿名黑客向我们发送了这条神秘信息：
+                                <code>A=(A+0</code>。
+                                你能通过读取 <code>flag.txt</code> 文件来证明我们的开发人员是错的吗？
                             </p>
-                            <h4>Fichiers à étudier</h4>
+                            <h4>需研究的文件</h4>
                             <p>
                                 - ../files/back-to-basic<br />
                                 - ../files/my_basic-master.zip<br />
@@ -79,25 +75,14 @@
                             <h3>FCSC 2025</h3>
                             <h2 class="section-title">Hackropole</h2>
                             <p class="section-subtitle">
-                                Lien officiel :
+                                官方链接:
                                 <a target="_blank"
                                     href="https://hackropole.fr/fr/challenges/pwn/fcsc2025-pwn-back-to-basic/">FCSC
                                     2025 -
                                     Back to BASIC
                                 </a>
                                 <br />
-                                Auteur: cde
-                        </div>
-                    </div>
-                </article>
-
-                <article class="row clearfix">
-                    <div class="col-1">
-                        <div class="section-heading">
-                            <h3>Apprentissage</h3>
-                            <h2 class="section-title">Documentations et Vidéos</h2>
-                            <p class="section-subtitle">
-                                Aucune documentation pour le moment
+                                作者: cde
                             </p>
                         </div>
                     </div>
@@ -106,12 +91,24 @@
                 <article class="row clearfix">
                     <div class="col-1">
                         <div class="section-heading">
-                            <h3>Aide</h3>
-                            <h2 class="section-title">Conseils et indices</h2>
+                            <h3>学习</h3>
+                            <h2 class="section-title">文档与视频</h2>
+                            <p class="section-subtitle">
+                                目前暂无文档
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="row clearfix">
+                    <div class="col-1">
+                        <div class="section-heading">
+                            <h3>帮助</h3>
+                            <h2 class="section-title">建议与提示</h2>
                             <p class="section-subtitle">
                                 <a target="_blank"
-                                    href="https://discord.com/channels/1175764392307077120/1175764601716092948">Fil sur
-                                    le Discord</a>
+                                    href="https://discord.com/channels/1175764392307077120/1175764601716092948">Discord
+                                    讨论帖</a>
                             </p>
                         </div>
                     </div>
@@ -122,7 +119,7 @@
         <!--End Main Content Area-->
 
         <a id="scrollUp" href="#wrapper" style="position: fixed; z-index: 1000;"
-            aria-label="Remonter en haut de la page" title="Remonter en tête de site"></a>
+            aria-label="返回顶部" title="返回顶部"></a>
     </div>
 </body>
 

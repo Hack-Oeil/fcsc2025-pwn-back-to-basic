@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 
-<head lang="fr">
+<head>
     <meta charset="UTF-8">
     <!--Page Title-->
     <title>Hack-Oeil - Les CTFs de Cyrhades</title>
@@ -16,7 +16,7 @@
     <script src="./assets/js/highlight.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Vérifie si la fenêtre est dans une iframe
+            // Verifica se la finestra si trova in un iframe
             if (window.self !== window.top) {
                 document.querySelectorAll('a').forEach((link) => {
                     link.addEventListener('click', (event) => {
@@ -31,11 +31,11 @@
                     });
                 });
             }
-            // Active la coloration syntaxique :
+            // Attiva l'evidenziazione della sintassi:
             if (window.hljs) {
                 hljs.highlightAll();
             } else {
-                console.error("Highlight.js non chargé !");
+                console.error("Highlight.js non caricato!");
             }
         });
     </script>
@@ -51,19 +51,19 @@
                 <article class="row clearfix">
                     <div class="col-1">
                         <div class="section-heading">
-                            <h3>Challenge #516</h3>
+                            <h3>Sfida #516</h3>
                             <h2 class="section-title">Back to BASIC</h2>
                             <p>
-                                Suite à quelques déboires avec le langage FORTH (cf.
-                                https://hackropole.fr/fr/challenges/pwn/fcsc2023-pwn-may-the-forth/), notre développeur
-                                a décidé d’un retour aux sources en utilisant un interpréteur BASIC. Il nous assure
-                                qu’aucune faille de sécurité n’est exploitable, grâce aux paramètres de compilation ;
-                                cependant, un hacker anonyme nous a transmis ce message énigmatique :
+                                A seguito di alcune disavventure con il linguaggio FORTH (cfr.
+                                https://hackropole.fr/fr/challenges/pwn/fcsc2023-pwn-may-the-forth/), il nostro sviluppatore
+                                ha deciso di tornare alle origini utilizzando un interprete BASIC. Ci assicura
+                                che nessuna falla di sicurezza è sfruttabile, grazie ai parametri di compilazione;
+                                tuttavia, un hacker anonimo ci ha inviato questo messaggio enigmatico:
                                 <code>A=(A+0</code>.
-                                Pouvez-vous prouver que notre développeur a tort en lisant le fichier
-                                <code>flag.txt</code> ?
+                                Riesci a dimostrare che il nostro sviluppatore ha torto leggendo il file
+                                <code>flag.txt</code>?
                             </p>
-                            <h4>Fichiers à étudier</h4>
+                            <h4>File da studiare</h4>
                             <p>
                                 - ../files/back-to-basic<br />
                                 - ../files/my_basic-master.zip<br />
@@ -79,25 +79,14 @@
                             <h3>FCSC 2025</h3>
                             <h2 class="section-title">Hackropole</h2>
                             <p class="section-subtitle">
-                                Lien officiel :
+                                Link ufficiale:
                                 <a target="_blank"
                                     href="https://hackropole.fr/fr/challenges/pwn/fcsc2025-pwn-back-to-basic/">FCSC
                                     2025 -
                                     Back to BASIC
                                 </a>
                                 <br />
-                                Auteur: cde
-                        </div>
-                    </div>
-                </article>
-
-                <article class="row clearfix">
-                    <div class="col-1">
-                        <div class="section-heading">
-                            <h3>Apprentissage</h3>
-                            <h2 class="section-title">Documentations et Vidéos</h2>
-                            <p class="section-subtitle">
-                                Aucune documentation pour le moment
+                                Autore: cde
                             </p>
                         </div>
                     </div>
@@ -106,12 +95,24 @@
                 <article class="row clearfix">
                     <div class="col-1">
                         <div class="section-heading">
-                            <h3>Aide</h3>
-                            <h2 class="section-title">Conseils et indices</h2>
+                            <h3>Apprendimento</h3>
+                            <h2 class="section-title">Documentazione e Video</h2>
+                            <p class="section-subtitle">
+                                Nessuna documentazione al momento
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="row clearfix">
+                    <div class="col-1">
+                        <div class="section-heading">
+                            <h3>Aiuto</h3>
+                            <h2 class="section-title">Consigli e indizi</h2>
                             <p class="section-subtitle">
                                 <a target="_blank"
-                                    href="https://discord.com/channels/1175764392307077120/1175764601716092948">Fil sur
-                                    le Discord</a>
+                                    href="https://discord.com/channels/1175764392307077120/1175764601716092948">Discussione
+                                    su Discord</a>
                             </p>
                         </div>
                     </div>
@@ -122,7 +123,7 @@
         <!--End Main Content Area-->
 
         <a id="scrollUp" href="#wrapper" style="position: fixed; z-index: 1000;"
-            aria-label="Remonter en haut de la page" title="Remonter en tête de site"></a>
+            aria-label="Torna in cima alla pagina" title="Torna in cima"></a>
     </div>
 </body>
 
